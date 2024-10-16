@@ -64,7 +64,7 @@ const About = () => {
                     </p>
                     <div className="w-full flex justify-center items-center mt-10">
                         <img id="about_us_img" className="w-52 sm:w-42 " src="assets/rickard.png" alt="headshot" />
-                        <p id="about_us_name" className="sm:text-3xl text-md text-white ml-7">Rickard Flygt Branje, <span className="text-orange-500">Owner</span></p>
+                        <p id="about_us_name" className="sm:text-3xl text-md text-white ml-7">Richard Flygt Branje, <span className="text-orange-500">Owner</span></p>
                     </div>
                 </div>
             </div>

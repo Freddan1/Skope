@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyDs64PyPUqfDxIMKt_uB7M1B-5LKr0Sauw",
+  apiKey: import.meta.env.VITE_FIREBASE_API,
 
   authDomain: "skope-e10a0.firebaseapp.com",
 

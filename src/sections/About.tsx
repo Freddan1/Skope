@@ -49,7 +49,7 @@ const About = () => {
 
   return (
     <>
-        <section className="min-h-screen w-full flex flex-col relative" >
+        <section id="about" className="min-h-screen w-full flex flex-col relative" >
             <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
                 <p id="about_us_title" className="hero_tag text-gray_gradient">
                     About Us

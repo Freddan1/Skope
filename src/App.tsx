@@ -1,3 +1,4 @@
+import { ToastProvider } from "./components/ToastContext"
 import About from "./sections/About"
 import Contact from "./sections/Contact"
 import Hero from "./sections/Hero"
@@ -7,13 +8,15 @@ import Projects from "./sections/Projects"
 
 const App = () => {
   return (
-    <main className='max-w-7xl mx-auto'>
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-    </main> 
+    <ToastProvider>
+      <main className='max-w-7xl mx-auto'>
+        <Navbar />
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </main> 
+    </ToastProvider>
   )
 }
 

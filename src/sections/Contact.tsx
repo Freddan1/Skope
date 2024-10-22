@@ -4,10 +4,13 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useToast } from "../components/ToastContext";
 
 gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 const Contact = () => {
+
+  const {showToast} = useToast()
     
     useGSAP(() => {
         gsap.from("#title-lets_talk", {
@@ -92,7 +95,7 @@ const Contact = () => {
                     message: form.message
             }, import.meta.env.VITE_EMAILJS_USER_ID  as string)
             setLoading(false)
-            alert("Your message has been sent")
+            showToast("Your message has been sent", 'success')
             setForm({
                 name: "",
                 email: "",
@@ -101,7 +104,7 @@ const Contact = () => {
         } catch (error) {
             setLoading(false)
             console.log(error)
-            alert("Something went wrong")
+            showToast('Ooops, Something went wrong', 'error')
         }
     }
 

@@ -16,10 +16,10 @@ const Contact = () => {
         gsap.from("#title-lets_talk", {
             opacity: 0,
             duration: 1,
-            y: 50, // Slide down effect
+            y: 50, 
             scrollTrigger: {
               trigger: "#title-lets_talk",
-              start: "top 75%", // Start when content is 75% visible
+              start: "top 75%", 
               toggleActions: "play none none reverse",
             },
           });
@@ -27,30 +27,30 @@ const Contact = () => {
         gsap.from("#full-name_contact", {
             opacity: 0,
             duration: 1,
-            y: 50, // Slide down effect
+            y: 50,
             scrollTrigger: {
               trigger: "#full-name_contact",
-              start: "top 75%", // Start when content is 75% visible
+              start: "top 75%",
               toggleActions: "play none none reverse",
             },
           });
         gsap.from("#email_contact", {
             opacity: 0,
             duration: 1,
-            y: 50, // Slide down effect
+            y: 50,
             scrollTrigger: {
               trigger: "#email_contact",
-              start: "top 75%", // Start when content is 75% visible
+              start: "top 75%",
               toggleActions: "play none none reverse",
             },
           });
         gsap.from("#your-message_contact", {
             opacity: 0,
             duration: 1,
-            y: 50, // Slide down effect
+            y: 50,
             scrollTrigger: {
               trigger: "#your-message_contact",
-              start: "top 75%", // Start when content is 75% visible
+              start: "top 75%", 
               toggleActions: "play none none reverse",
             },
           });
@@ -60,7 +60,7 @@ const Contact = () => {
             y: 50, // Slide down effect
             scrollTrigger: {
               trigger: "#your-message_contact",
-              start: "top 75%", // Start when content is 75% visible
+              start: "top 75%", 
               toggleActions: "play none none reverse",
             },
           });

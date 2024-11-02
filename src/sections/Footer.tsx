@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Footer = () => {
+const Footer:React.FC = () => {
 
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
@@ -30,7 +30,7 @@ const Footer = () => {
                 Integritetspolicy
             </p>
             <p className='text-white-500'>
-                Page created by FredDev
+                Page created by <a href="https://fredriks-portfolio.web.app/"><span className='underline'>FredDev</span></a>
             </p>
         </div>
         {isOpen && (

@@ -111,7 +111,6 @@ const Contact = () => {
   return (
     <section id="contact" className='c-space my-20'>
         <div className='relative min-h-screen flex justify-center items-center flex-col'>
-            <img src='/assets/terminal.png' alt='terminal background' className='absolute inset-0 min-h-screen hidden lg:block'/>
             <div className='contact-container'>
                 <h3 id="title-lets_talk" className='head-text'>Let's Talk</h3>
                 <p id="title-lets_talk" className="text-lg text-white-600">
